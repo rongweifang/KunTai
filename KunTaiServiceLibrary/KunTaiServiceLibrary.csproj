@@ -1,0 +1,177 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DDD9227B-ECBC-41C9-97EA-4E2D9E691AAD}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>KunTaiServiceLibrary</RootNamespace>
+    <AssemblyName>KunTaiServiceLibrary</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Aspose.Cells">
+      <HintPath>dlls\Aspose.Cells.dll</HintPath>
+    </Reference>
+    <Reference Include="Aspose.Words">
+      <HintPath>dlls\Aspose.Words.dll</HintPath>
+    </Reference>
+    <Reference Include="FluorineFx, Version=1.0.0.15, Culture=neutral, PublicKeyToken=1875756ba09931ab, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Dlls\FluorineFx.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib, Version=0.86.0.518, Culture=neutral, PublicKeyToken=1b03e6acf1164f73, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>dlls\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=7.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.7.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Warrior.DataAccessUtils.Desktop, Version=1.0.0.2, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>dlls\Warrior.DataAccessUtils.Desktop.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="controllers\assignPlan\ZY_AssignPlan.cs" />
+    <Compile Include="controllers\authority\Authority.cs" />
+    <Compile Include="consumeEnergy\ZY_ConsumeEnergy.cs" />
+    <Compile Include="controllers\employee\Employee.cs" />
+    <Compile Include="controllers\IController.cs" />
+    <Compile Include="controllers\log\Log.cs" />
+    <Compile Include="controllers\log\Log2.cs" />
+    <Compile Include="controllers\organization\Organization.cs" />
+    <Compile Include="controllers\pumpValue\ZY_PUMPVALUE.cs" />
+    <Compile Include="controllers\pushOrder\KT_Boiler.cs" />
+    <Compile Include="controllers\pushOrder\KT_PushOrder_Arithmetic.cs" />
+    <Compile Include="controllers\pushOrder\KT_PUSHORDER_Dal.cs" />
+    <Compile Include="controllers\pushOrder\KT_PUSHORDER_Model.cs" />
+    <Compile Include="controllers\pushOrder\KT_RunCommand.cs" />
+    <Compile Include="controllers\pushOrder\KT_StationReport.cs" />
+    <Compile Include="controllers\pushOrder\OrderAlgorithm.cs" />
+    <Compile Include="controllers\pushOrder\PushOrder.cs" />
+    <Compile Include="controllers\pushOrder\KT_PushOrder.cs" />
+    <Compile Include="controllers\pushOrder\ZY_PushOrder.cs" />
+    <Compile Include="controllers\pushOrder\KT_PushOrderWeather.cs" />
+    <Compile Include="controllers\pushOrder\ZY_PushOrderWeather.cs" />
+    <Compile Include="controllers\role\Role.cs" />
+    <Compile Include="controllers\station\Station.cs" />
+    <Compile Include="controllers\station\ZY_WR_STAT_A.cs" />
+    <Compile Include="controllers\station\ZY_WR_STAT_B.cs" />
+    <Compile Include="controllers\weatherTime\WeatherTime.cs" />
+    <Compile Include="controllers\weather\Weather.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="utils\WeatherUtils.cs" />
+    <Compile Include="utils\ColorUtils.cs" />
+    <Compile Include="utils\Config.cs" />
+    <Compile Include="utils\DataAccessHandler.cs" />
+    <Compile Include="utils\Error.cs" />
+    <Compile Include="utils\ExcelToDataSet.cs" />
+    <Compile Include="utils\FileNameComparer.cs" />
+    <Compile Include="utils\IDCardNoUtils.cs" />
+    <Compile Include="utils\MathUtils.cs" />
+    <Compile Include="utils\PushOrderAdminUtils.cs" />
+    <Compile Include="utils\SqlServerCommandText.cs" />
+    <Compile Include="utils\Result.cs" />
+    <Compile Include="utils\Security.cs" />
+    <Compile Include="utils\Services.cs" />
+    <Compile Include="utils\Time.cs" />
+    <Compile Include="utils\Zip.cs" />
+    <Compile Include="valueObjects\AuthorityObject.cs" />
+    <Compile Include="valueObjects\KT_RunCommandObject.cs" />
+    <Compile Include="valueObjects\LogObject.cs" />
+    <Compile Include="valueObjects\EmployeeObject.cs" />
+    <Compile Include="valueObjects\OrganizationObject.cs" />
+    <Compile Include="valueObjects\PushOrderObject.cs" />
+    <Compile Include="valueObjects\PushOrderReceiveObject.cs" />
+    <Compile Include="valueObjects\RoleObject.cs" />
+    <Compile Include="valueObjects\ZY_AssignPlanObject.cs" />
+    <Compile Include="valueObjects\ZY_PushOrderObject.cs" />
+    <Compile Include="valueObjects\KT_PushOrderWeatherObject.cs" />
+    <Compile Include="valueObjects\ZY_PushOrderWeatherObject.cs" />
+    <Compile Include="valueObjects\StationObject.cs" />
+    <Compile Include="valueObjects\Weather24Object.cs" />
+    <Compile Include="valueObjects\WeatherObject.cs" />
+    <Compile Include="valueObjects\WeatherTimeObject.cs" />
+    <Compile Include="valueObjects\ZY_ConsumeEnergyObject.cs" />
+    <Compile Include="valueObjects\ZY_PUMPVALUEObject.cs" />
+    <Compile Include="valueObjects\ZY_WR_STAT_BObject.cs" />
+    <Compile Include="valueObjects\ZY_WR_STAT_AObject.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="dlls\FluorineFx.dll" />
+    <Content Include="dlls\ICSharpCode.SharpZipLib.dll" />
+    <Content Include="dlls\Warrior.DataAccessUtils.Desktop.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="controllers\file\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DBUtility\DBUtility.csproj">
+      <Project>{0988c62e-247f-471f-a183-db509c7a3839}</Project>
+      <Name>DBUtility</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
