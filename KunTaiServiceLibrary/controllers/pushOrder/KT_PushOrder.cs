@@ -254,7 +254,7 @@ DELETE KT_RUNCOMMAND WHERE PUSHID IN ({0})";
                 OA.Area = Decimal.Parse(dr["Area"].ToString());
                 OA.Tonnage= int.Parse(dr["Tonnage"].ToString());
                 OA.Target = int.Parse(dr["Target"].ToString());
-                //OA.BoilerCount = (int)dr["BoilerCount"];
+                OA.BoilerCount = (int)dr["BoilerCount"];
                 OA.Power = int.Parse(dr["Power"].ToString());
                 //OA.Scontent = (float)dr["Scontent"];
                 OA.Efficiency = Decimal.Parse(dr["Efficiency"].ToString());
@@ -271,16 +271,7 @@ DELETE KT_RUNCOMMAND WHERE PUSHID IN ({0})";
             // decimal SectionRatio3 = SectionRatio[2];
             decimal SectionRatio4 = SectionRatio[3];
             decimal SectionRatio3 = 1 - SectionRatio1- SectionRatio2- SectionRatio4;
-            // excel标题和运行指令的日期
-            //string runDateTime ="";
-            //if (isToday)
-            //{
-            //    runDateTime = DateTime.Now.ToString("d日MM月yy年");
-            //}
-            //else
-            //{
-            //    runDateTime = DateTime.Now.AddDays(1).ToString("d日MM月yy年");
-            //}
+           
 
             string titleName = string.Format("{0}，坤泰热源指令量区间分配表", runDateTime);
 
@@ -305,11 +296,11 @@ DELETE KT_RUNCOMMAND WHERE PUSHID IN ({0})";
             //Model.Command_Diesel = KT_PushOrder_Arithmetic.GetCommand_Diesel(instructTime);
 
             Model.Command_Coal = OA.GetCoalTotal();
-            Model.Command_Water = OA.GetWaterTotal();
-            Model.Command_Ele = OA.GetEle();
+            Model.Command_Water = OA.GetWaterGL();
+            Model.Command_Ele = OA.GetEleGL();
             Model.Command_Alkali = OA.GetAlkali();
-            Model.Command_Salt = OA.GetSalt();
-            Model.Command_Diesel = KT_PushOrder_Arithmetic.GetCommand_Diesel(instructTime);
+            Model.Command_Salt = Math.Round(OA.GetSalt() * 45 / 50, 2);
+            Model.Command_Diesel = OA.GetAlkali();
 
             Model.CreateUser = "C1359ACA-10DF-4338-8D62-66F22724B647";
             KT_PUSHORDER_Dal.Add(Model);
@@ -498,15 +489,15 @@ DELETE KT_RUNCOMMAND WHERE PUSHID IN ({0})";
             sheet.Cells[3, 4].SetStyle(cellStyle);
             //指令耗水
             sheet.Cells.Merge(3, 5, 1, 1);
-            sheet.Cells[3, 5].PutValue(OA.GetWaterTotal());
+            sheet.Cells[3, 5].PutValue(OA.GetWaterGL());
             sheet.Cells[3, 5].SetStyle(cellStyle);
             //指令耗电
             sheet.Cells.Merge(3, 6, 1, 1);
-            sheet.Cells[3, 6].PutValue(OA.GetEle());
+            sheet.Cells[3, 6].PutValue(OA.GetEleGL());
             sheet.Cells[3, 6].SetStyle(cellStyle);
             //耗盐
             sheet.Cells.Merge(3, 7, 1, 1);
-            sheet.Cells[3, 7].PutValue(OA.GetSalt());
+            sheet.Cells[3, 7].PutValue(Math.Round(OA.GetSalt() * 45 / 50, 2));
             sheet.Cells[3, 7].SetStyle(cellStyle);
             //耗碱
             sheet.Cells.Merge(3, 8, 1, 1);
@@ -556,15 +547,15 @@ DELETE KT_RUNCOMMAND WHERE PUSHID IN ({0})";
             sheet.Cells[4, 4].SetStyle(cellStyle);
 
             sheet.Cells.Merge(4, 5, 1, 1);
-            sheet.Cells[4, 5].PutValue(Math.Round(SectionRatio1 * OA.GetWaterTotal(), 2));
+            sheet.Cells[4, 5].PutValue(Math.Round(SectionRatio1 * OA.GetWaterGL(), 2));
             sheet.Cells[4, 5].SetStyle(cellStyle);
 
             sheet.Cells.Merge(4, 6, 1, 1);
-            sheet.Cells[4, 6].PutValue(Math.Round(SectionRatio1 * OA.GetEle(), 2));
+            sheet.Cells[4, 6].PutValue(Math.Round(SectionRatio1 * OA.GetEleGL(), 2));
             sheet.Cells[4, 6].SetStyle(cellStyle);
 
             sheet.Cells.Merge(4, 7, 1, 1);
-            sheet.Cells[4, 7].PutValue(Math.Round(SectionRatio1 * OA.GetSalt(), 2));
+            sheet.Cells[4, 7].PutValue(Math.Round(SectionRatio1 * Math.Round(OA.GetSalt() * 45 / 50, 2), 2));
             sheet.Cells[4, 7].SetStyle(cellStyle);
 
             sheet.Cells.Merge(4, 8, 1, 1);
@@ -601,15 +592,15 @@ DELETE KT_RUNCOMMAND WHERE PUSHID IN ({0})";
             sheet.Cells[5, 4].SetStyle(cellStyle);
 
             sheet.Cells.Merge(5, 5, 1, 1);
-            sheet.Cells[5, 5].PutValue(Math.Round(SectionRatio2 *OA.GetWaterTotal(), 2));
+            sheet.Cells[5, 5].PutValue(Math.Round(SectionRatio2 *OA.GetWaterGL(), 2));
             sheet.Cells[5, 5].SetStyle(cellStyle);
 
             sheet.Cells.Merge(5, 6, 1, 1);
-            sheet.Cells[5, 6].PutValue(Math.Round(SectionRatio2 * OA.GetEle(), 2));
+            sheet.Cells[5, 6].PutValue(Math.Round(SectionRatio2 * OA.GetEleGL(), 2));
             sheet.Cells[5, 6].SetStyle(cellStyle);
 
             sheet.Cells.Merge(5, 7, 1, 1);
-            sheet.Cells[5, 7].PutValue(Math.Round(SectionRatio2 *OA.GetSalt(), 2));
+            sheet.Cells[5, 7].PutValue(Math.Round(SectionRatio2 * Math.Round(OA.GetSalt() * 45 / 50, 2), 2));
             sheet.Cells[5, 7].SetStyle(cellStyle);
 
             sheet.Cells.Merge(5, 8, 1, 1);
@@ -646,15 +637,15 @@ DELETE KT_RUNCOMMAND WHERE PUSHID IN ({0})";
             sheet.Cells[6, 4].SetStyle(cellStyle);
 
             sheet.Cells.Merge(6, 5, 1, 1);
-            sheet.Cells[6, 5].PutValue(Math.Round(OA.GetWaterTotal(), 2) - Math.Round(SectionRatio1 * OA.GetWaterTotal(), 2) - Math.Round(SectionRatio2 * OA.GetWaterTotal(), 2) - Math.Round(SectionRatio4 * OA.GetWaterTotal(), 2));
+            sheet.Cells[6, 5].PutValue(Math.Round(OA.GetWaterGL(), 2) - Math.Round(SectionRatio1 * OA.GetWaterGL(), 2) - Math.Round(SectionRatio2 * OA.GetWaterGL(), 2) - Math.Round(SectionRatio4 * OA.GetWaterGL(), 2));
             sheet.Cells[6, 5].SetStyle(cellStyle);
 
             sheet.Cells.Merge(6, 6, 1, 1);
-            sheet.Cells[6, 6].PutValue(Math.Round(OA.GetEle(), 2) - Math.Round(SectionRatio1 * OA.GetEle(), 2) - Math.Round(SectionRatio2 * OA.GetEle(), 2) - Math.Round(SectionRatio4 * OA.GetEle(), 2));
+            sheet.Cells[6, 6].PutValue(Math.Round(OA.GetEleGL(), 2) - Math.Round(SectionRatio1 * OA.GetEleGL(), 2) - Math.Round(SectionRatio2 * OA.GetEleGL(), 2) - Math.Round(SectionRatio4 * OA.GetEleGL(), 2));
             sheet.Cells[6, 6].SetStyle(cellStyle);
 
             sheet.Cells.Merge(6, 7, 1, 1);
-            sheet.Cells[6, 7].PutValue(Math.Round(OA.GetSalt(), 2) - Math.Round(SectionRatio1 * OA.GetSalt(), 2) - Math.Round(SectionRatio2 * OA.GetSalt(), 2) - Math.Round(SectionRatio4 * OA.GetSalt(), 2));
+            sheet.Cells[6, 7].PutValue(Math.Round(OA.GetSalt() * 45 / 50, 2) - Math.Round(SectionRatio1 * Math.Round(OA.GetSalt() * 45 / 50, 2), 2) - Math.Round(SectionRatio2 * Math.Round(OA.GetSalt() * 45 / 50, 2), 2) - Math.Round(SectionRatio4 * Math.Round(OA.GetSalt() * 45 / 50, 2), 2));
             sheet.Cells[6, 7].SetStyle(cellStyle);
 
             sheet.Cells.Merge(6, 8, 1, 1);
@@ -691,15 +682,15 @@ DELETE KT_RUNCOMMAND WHERE PUSHID IN ({0})";
             sheet.Cells[7, 4].SetStyle(cellStyle);
 
             sheet.Cells.Merge(7, 5, 1, 1);
-            sheet.Cells[7, 5].PutValue(Math.Round(SectionRatio4 *OA.GetWaterTotal(), 2));
+            sheet.Cells[7, 5].PutValue(Math.Round(SectionRatio4 *OA.GetWaterGL(), 2));
             sheet.Cells[7, 5].SetStyle(cellStyle);
 
             sheet.Cells.Merge(7, 6, 1, 1);
-            sheet.Cells[7, 6].PutValue(Math.Round(SectionRatio4 * OA.GetEle(), 2));
+            sheet.Cells[7, 6].PutValue(Math.Round(SectionRatio4 * OA.GetEleGL(), 2));
             sheet.Cells[7, 6].SetStyle(cellStyle);
 
             sheet.Cells.Merge(7, 7, 1, 1);
-            sheet.Cells[7, 7].PutValue(Math.Round(SectionRatio4 *OA.GetSalt(), 2));
+            sheet.Cells[7, 7].PutValue(Math.Round(SectionRatio4 * Math.Round(OA.GetSalt() * 45 / 50, 2), 2));
             sheet.Cells[7, 7].SetStyle(cellStyle);
 
             sheet.Cells.Merge(7, 8, 1, 1);
@@ -742,15 +733,15 @@ DELETE KT_RUNCOMMAND WHERE PUSHID IN ({0})";
             sheet.Cells[8, 4].SetStyle(cellStyle);
             //指令耗水
             sheet.Cells.Merge(8, 5, 1, 1);
-            sheet.Cells[8, 5].PutValue(Math.Round(OA.GetWaterTotal(), 2));
+            sheet.Cells[8, 5].PutValue(Math.Round(OA.GetWaterGL(), 2));
             sheet.Cells[8, 5].SetStyle(cellStyle);
             //指令耗电
             sheet.Cells.Merge(8, 6, 1, 1);
-            sheet.Cells[8, 6].PutValue(Math.Round(OA.GetEle(), 2));
+            sheet.Cells[8, 6].PutValue(Math.Round(OA.GetEleGL(), 2));
             sheet.Cells[8, 6].SetStyle(cellStyle);
             //耗盐
             sheet.Cells.Merge(8, 7, 1, 1);
-            sheet.Cells[8, 7].PutValue(Math.Round(OA.GetSalt(), 2));
+            sheet.Cells[8, 7].PutValue(Math.Round(Math.Round(OA.GetSalt() * 45 / 50, 2), 2));
             sheet.Cells[8, 7].SetStyle(cellStyle);
             //耗碱
             sheet.Cells.Merge(8, 8, 1, 1);
@@ -1034,25 +1025,9 @@ DELETE KT_RUNCOMMAND WHERE PUSHID IN ({0})";
             //decimal hj_FLOW = Math.Round(dayRunTime * 1.510444444m * 1.301064195m, 2);
             if (dataSetPushOrder != null && dataSetPushOrder.Tables.Count > 0)
             {
-                decimal _Total_Time = 0m;
-                decimal _Total_Ele = 0m;
-                decimal _Total_Water = 0m;
-
-                decimal _Total_Sec1_Time = 0m;
-                decimal _Total_Sec1_Ele = 0m;
-                decimal _Total_Sec1_Water = 0m;
-
-                decimal _Total_Sec2_Time = 0m;
-                decimal _Total_Sec2_Ele = 0m;
-                decimal _Total_Sec2_Water = 0m;
-
-                decimal _Total_Sec3_Time = 0m;
-                decimal _Total_Sec3_Ele = 0m;
-                decimal _Total_Sec3_Water = 0m;
-
-                decimal _Total_Sec4_Time = 0m;
-                decimal _Total_Sec4_Ele = 0m;
-                decimal _Total_Sec4_Water = 0m;
+                decimal _TotalRunTime = 0m;
+                decimal _TotalEle = 0m;
+                decimal _TotalWater = 0m;
 
                 foreach (DataRow oldRow in dataSetPushOrder.Tables[0].Rows)
                 {
@@ -1066,23 +1041,24 @@ DELETE KT_RUNCOMMAND WHERE PUSHID IN ({0})";
                     OA.Power = Decimal.Parse(oldRow["CYCLEPOWER"].ToString());
                     OA.CYCLEFLOW = Decimal.Parse(oldRow["CYCLEFLOW"].ToString());
                     OA.Efficiency = Decimal.Parse(oldRow["Efficiency"].ToString());
-                    OA.Power = Decimal.Parse(oldRow["CYCLEPOWER"].ToString());
+                    OA.PathFlow = decimal.Parse(oldRow["PathFlow"].ToString());
+                    OA.PatchPower = decimal.Parse(oldRow["PatchPower"].ToString());
+                    OA.PatchEfficiency = decimal.Parse(oldRow["PatchEfficiency"].ToString());
                     OA.Ratio= Decimal.Parse(oldRow["Ratio"].ToString());
                     _ZL_WaterTotal = OA.GetWater2();
                     dayRunTime = OA.GetStationRunDate();
                     _ZL_Ele = OA.GetStationEle();
 
-                    _Total_Time += dayRunTime;
-                    _Total_Ele += _ZL_Ele;
-                    _Total_Water += _ZL_WaterTotal;
-
-
                     if (oldRow["NAME"].ToString().Equals("锅炉循环泵"))
                     {
                         _ZL_WaterTotal = OA.GetWaterTotal();
                         dayRunTime = OA.GetPumpDate(_ZL_WaterTotal);
-                        _ZL_Ele = dayRunTime * OA.Power;
+                        _ZL_Ele = OA.GetGuoLuEle();
                     }
+
+                    _TotalRunTime += dayRunTime;
+                    _TotalEle += _ZL_Ele;
+                    _TotalWater += _ZL_WaterTotal;
 
                     #region 保存数据
 
@@ -1180,12 +1156,86 @@ DELETE KT_RUNCOMMAND WHERE PUSHID IN ({0})";
                     Station.Cells[r, c].SetStyle(cellStyle);
                     r++;
                 }
+                #region 合计
+                c = 0;
+                Station.Cells.Merge(r, c, 1, 1);
+                Station.Cells[r, c].PutValue("合计");
+                Station.Cells[r, c].SetStyle(cellStyle);
+                c++;
+                Station.Cells.Merge(r, c, 1, 1);
+                Station.Cells[r, c].PutValue(Math.Round(_TotalRunTime, 2));
+                Station.Cells[r, c].SetStyle(cellStyle);
+                c++;
+                Station.Cells.Merge(r, c, 1, 1);
+                Station.Cells[r, c].PutValue(_TotalEle);
+                Station.Cells[r, c].SetStyle(cellStyle);
+                c++;
+                Station.Cells.Merge(r, c, 1, 1);
+                Station.Cells[r, c].PutValue(_TotalWater);
+                Station.Cells[r, c].SetStyle(cellStyle);
+                c++;
+                Station.Cells.Merge(r, c, 1, 1);
+                Station.Cells[r, c].PutValue(Math.Round(_TotalRunTime * SectionRatio1, 2));
+                Station.Cells[r, c].SetStyle(cellStyle);
+                c++;
+                Station.Cells.Merge(r, c, 1, 1);
+                Station.Cells[r, c].PutValue(Math.Round(_TotalEle * SectionRatio1, 2));
+                Station.Cells[r, c].SetStyle(cellStyle);
+                c++;
+                Station.Cells.Merge(r, c, 1, 1);
+                Station.Cells[r, c].PutValue(Math.Round(_TotalWater * SectionRatio1, 2));
+                Station.Cells[r, c].SetStyle(cellStyle);
+                c++;
+                Station.Cells.Merge(r, c, 1, 1);
+                Station.Cells[r, c].PutValue(Math.Round(_TotalRunTime * SectionRatio2, 2));
+                Station.Cells[r, c].SetStyle(cellStyle);
+                c++;
+                Station.Cells.Merge(r, c, 1, 1);
+                Station.Cells[r, c].PutValue(Math.Round(_TotalEle * SectionRatio2, 2));
+                Station.Cells[r, c].SetStyle(cellStyle);
+                c++;
+                Station.Cells.Merge(r, c, 1, 1);
+                Station.Cells[r, c].PutValue(Math.Round(_TotalWater * SectionRatio2, 2));
+                Station.Cells[r, c].SetStyle(cellStyle);
+                c++;
+                Station.Cells.Merge(r, c, 1, 1);
+                Station.Cells[r, c].PutValue(Math.Round(_TotalRunTime * SectionRatio3, 2));
+                Station.Cells[r, c].SetStyle(cellStyle);
+                c++;
+                Station.Cells.Merge(r, c, 1, 1);
+                Station.Cells[r, c].PutValue(Math.Round(_TotalEle * SectionRatio3, 2));
+                Station.Cells[r, c].SetStyle(cellStyle);
+                c++;
+                Station.Cells.Merge(r, c, 1, 1);
+                Station.Cells[r, c].PutValue(Math.Round(_TotalWater * SectionRatio3, 2));
+                Station.Cells[r, c].SetStyle(cellStyle);
+                c++;
+                Station.Cells.Merge(r, c, 1, 1);
+                Station.Cells[r, c].PutValue(Math.Round(_TotalRunTime * SectionRatio4, 2));
+                Station.Cells[r, c].SetStyle(cellStyle);
+                c++;
+                Station.Cells.Merge(r, c, 1, 1);
+                Station.Cells[r, c].PutValue(Math.Round(_TotalEle * SectionRatio4, 2));
+                Station.Cells[r, c].SetStyle(cellStyle);
+                c++;
+                Station.Cells.Merge(r, c, 1, 1);
+                Station.Cells[r, c].PutValue(Math.Round(_TotalWater * SectionRatio4, 2));
+                Station.Cells[r, c].SetStyle(cellStyle);
+                c++;
+                Station.Cells.Merge(r, c, 1, 1);
+                Station.Cells[r, c].SetStyle(cellStyle);
+                c++;
+                Station.Cells.Merge(r, c, 1, 1);
+                Station.Cells[r, c].SetStyle(cellStyle);
+                c++;
+                Station.Cells.Merge(r, c, 1, 1);
+                Station.Cells[r, c].SetStyle(cellStyle);
+
+                r++;
+                #endregion
             }
             #endregion
 
-            #region
-
-            #endregion
 
             #region 制表人
             c = 0;

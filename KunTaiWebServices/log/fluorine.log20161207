@@ -1,0 +1,383 @@
+2016-12-07 12:23:59,378 [3] INFO  FluorineFx.FluorineGateway - Aquire ServiceBrowser renderer
+2016-12-07 12:23:59,390 [3] DEBUG FluorineFx.TypeHelper - Checking FluorineFx location
+2016-12-07 12:23:59,390 [3] DEBUG FluorineFx.TypeHelper - Adding LAC location C:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\4f3dc2e4\41d2a55d\assembly\dl3\649e3f89\00cc76dd_5c44c901
+2016-12-07 12:23:59,390 [3] DEBUG FluorineFx.TypeHelper - Checking DynamicDirectory
+2016-12-07 12:23:59,390 [3] DEBUG FluorineFx.TypeHelper - Adding LAC location C:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\4f3dc2e4
+2016-12-07 12:23:59,390 [3] DEBUG FluorineFx.TypeHelper - Checking Request PhysicalApplicationPath
+2016-12-07 12:23:59,394 [3] DEBUG FluorineFx.TypeHelper - Adding LAC location D:\0.坤泰供热项目\Codes\WebServices\KunTaiWebServices\bin
+2016-12-07 12:23:59,394 [3] DEBUG FluorineFx.TypeHelper - Adding LAC location D:\0.坤泰供热项目\Codes\WebServices\KunTaiWebServices\Bin
+2016-12-07 12:23:59,402 [3] INFO  FluorineFx.FluorineGateway - Aquired ServiceBrowser renderer
+2016-12-07 12:23:59,402 [3] INFO  FluorineFx.FluorineGateway - ************************************
+2016-12-07 12:23:59,402 [3] INFO  FluorineFx.FluorineGateway - Starting FluorineFx Gateway
+2016-12-07 12:23:59,402 [3] INFO  FluorineFx.FluorineGateway - FluorineFx version 1.0.0.15
+2016-12-07 12:23:59,402 [3] INFO  FluorineFx.FluorineGateway - ************************************
+2016-12-07 12:23:59,402 [3] INFO  FluorineFx.FluorineGateway - Creating Message Server
+2016-12-07 12:23:59,410 [3] DEBUG FluorineFx.Messaging.Config.ServiceConfigSettings - Loading services configuration file D:\0.坤泰供热项目\Codes\WebServices\KunTaiWebServices\WEB-INF\flex\services-config.xml
+2016-12-07 12:23:59,414 [3] DEBUG FluorineFx.Messaging.Config.ServiceConfigSettings - Loading configuration file D:\0.坤泰供热项目\Codes\WebServices\KunTaiWebServices\WEB-INF\flex\remoting-config.xml
+2016-12-07 12:23:59,426 [3] INFO  FluorineFx.Messaging.MessageServer - Starting Message Broker
+2016-12-07 12:23:59,438 [3] INFO  FluorineFx.FluorineGateway - Message Server started
+2016-12-07 12:24:01,034 [8] DEBUG FluorineFx.FluorineGateway - Begin AMF request
+2016-12-07 12:24:01,038 [8] DEBUG FluorineFx.Messaging.MessageServer - Query endpoint endpointPath /Gateway.aspx contextPath /
+2016-12-07 12:24:01,058 [8] DEBUG FluorineFx.IO.AMFReader - Class definition flex.messaging.messages.CommandMessage loaded
+2016-12-07 12:24:01,086 [8] DEBUG FluorineFx.IO.AMFReader - Class definition (untyped) loaded
+2016-12-07 12:24:01,086 [8] DEBUG FluorineFx.IO.AMFReader - Class definition (untyped) loaded
+2016-12-07 12:24:01,126 [8] DEBUG FluorineFx.Messaging.ClientManager - Creating new Client b2220fbd754148e0ad7f4da8fd3b2df0
+2016-12-07 12:24:01,138 [8] DEBUG FluorineFx.Messaging.MessageBroker - Routing CommandMessage ping
+2016-12-07 12:24:01,182 [8] DEBUG FluorineFx.FluorineGateway - End AMF request
+2016-12-07 12:24:01,230 [10] DEBUG FluorineFx.FluorineGateway - Begin AMF request
+2016-12-07 12:24:01,230 [10] DEBUG FluorineFx.Messaging.MessageServer - Query endpoint endpointPath /Gateway.aspx contextPath /
+2016-12-07 12:24:01,230 [10] DEBUG FluorineFx.IO.AMFReader - Class definition flex.messaging.messages.RemotingMessage loaded
+2016-12-07 12:24:01,238 [10] DEBUG FluorineFx.IO.AMFReader - Class definition (untyped) loaded
+2016-12-07 12:24:01,238 [10] DEBUG FluorineFx.Messaging.MessageBroker - Routing message RemotingMessage
+2016-12-07 12:24:01,258 [10] DEBUG FluorineFx.TypeHelper - TypeHelper probing assembly C:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\4f3dc2e4\41d2a55d\assembly\dl3\649e3f89\00cc76dd_5c44c901\FluorineFx.DLL
+2016-12-07 12:24:01,262 [10] DEBUG FluorineFx.TypeHelper - TypeHelper probing assembly C:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\4f3dc2e4\41d2a55d\App_Code.o2nahwit.dll
+2016-12-07 12:24:01,262 [10] DEBUG FluorineFx.TypeHelper - TypeHelper probing assembly C:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\4f3dc2e4\41d2a55d\App_Web_ug5qtwuw.dll
+2016-12-07 12:24:01,266 [10] DEBUG FluorineFx.TypeHelper - TypeHelper probing assembly C:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\4f3dc2e4\41d2a55d\assembly\dl3\0cfd59f9\00824ea8_7260d001\Aspose.Cells.DLL
+2016-12-07 12:24:01,274 [10] DEBUG FluorineFx.TypeHelper - TypeHelper probing assembly C:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\4f3dc2e4\41d2a55d\assembly\dl3\2040d130\2c7267b0_4150d201\KunTaiServiceLibrary.DLL
+2016-12-07 12:24:01,278 [10] DEBUG FluorineFx.TypeHelper - TypeHelper probing assembly C:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\4f3dc2e4\41d2a55d\assembly\dl3\24b59d47\2b760ab0_4150d201\Maticsoft.DBUtility.DLL
+2016-12-07 12:24:01,282 [10] DEBUG FluorineFx.TypeHelper - TypeHelper probing assembly C:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\4f3dc2e4\41d2a55d\assembly\dl3\4246dbdc\00ab3132_0b0ed101\Warrior.DataAccessUtils.Desktop.DLL
+2016-12-07 12:24:01,286 [10] DEBUG FluorineFx.TypeHelper - TypeHelper probing assembly C:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\4f3dc2e4\41d2a55d\assembly\dl3\63d53856\00824ea8_7260d001\Aspose.Words.DLL
+2016-12-07 12:24:01,290 [10] DEBUG FluorineFx.TypeHelper - TypeHelper probing assembly C:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\4f3dc2e4\41d2a55d\assembly\dl3\649e3f89\00cc76dd_5c44c901\FluorineFx.DLL
+2016-12-07 12:24:01,290 [10] DEBUG FluorineFx.TypeHelper - TypeHelper probing assembly C:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\4f3dc2e4\41d2a55d\assembly\dl3\88638a14\00beb281_ec53c601\log4net.DLL
+2016-12-07 12:24:01,294 [10] DEBUG FluorineFx.TypeHelper - TypeHelper probing assembly C:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\4f3dc2e4\41d2a55d\assembly\dl3\904fbb1e\0036185a_b8e4c701\MySql.Data.DLL
+2016-12-07 12:24:01,298 [10] DEBUG FluorineFx.TypeHelper - TypeHelper probing assembly C:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\4f3dc2e4\41d2a55d\assembly\dl3\a047a6f2\00482437_670ed101\Newtonsoft.Json.DLL
+2016-12-07 12:24:01,302 [10] DEBUG FluorineFx.TypeHelper - TypeHelper probing assembly C:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\4f3dc2e4\41d2a55d\assembly\dl3\a96076a4\00f9a7de_5c44c901\FluorineFx.ServiceBrowser.DLL
+2016-12-07 12:24:01,314 [10] DEBUG FluorineFx.Invocation.InvocationHandler - Invoking method FluorineFx.ServiceBrowser.FluorineServiceBrowser.pingBrowser
+2016-12-07 12:24:01,318 [10] DEBUG FluorineFx.FluorineGateway - End AMF request
+2016-12-07 12:24:01,368 [8] DEBUG FluorineFx.FluorineGateway - Begin AMF request
+2016-12-07 12:24:01,368 [8] DEBUG FluorineFx.Messaging.MessageServer - Query endpoint endpointPath /Gateway.aspx contextPath /
+2016-12-07 12:24:01,368 [8] DEBUG FluorineFx.IO.AMFReader - Class definition flex.messaging.messages.RemotingMessage loaded
+2016-12-07 12:24:01,368 [8] DEBUG FluorineFx.IO.AMFReader - Class definition (untyped) loaded
+2016-12-07 12:24:01,368 [8] DEBUG FluorineFx.Messaging.MessageBroker - Routing message RemotingMessage
+2016-12-07 12:24:01,368 [8] DEBUG FluorineFx.Invocation.InvocationHandler - Invoking method FluorineFx.ServiceBrowser.FluorineServiceBrowser.getCapabilities
+2016-12-07 12:24:01,388 [8] DEBUG FluorineFx.FluorineGateway - End AMF request
+2016-12-07 12:24:01,444 [10] DEBUG FluorineFx.FluorineGateway - Begin AMF request
+2016-12-07 12:24:01,444 [10] DEBUG FluorineFx.Messaging.MessageServer - Query endpoint endpointPath /Gateway.aspx contextPath /
+2016-12-07 12:24:01,444 [10] DEBUG FluorineFx.IO.AMFReader - Class definition flex.messaging.messages.RemotingMessage loaded
+2016-12-07 12:24:01,444 [10] DEBUG FluorineFx.IO.AMFReader - Class definition (untyped) loaded
+2016-12-07 12:24:01,444 [10] DEBUG FluorineFx.Messaging.MessageBroker - Routing message RemotingMessage
+2016-12-07 12:24:01,444 [10] DEBUG FluorineFx.Invocation.InvocationHandler - Invoking method FluorineFx.ServiceBrowser.FluorineServiceBrowser.getServices
+2016-12-07 12:24:01,452 [10] DEBUG FluorineFx.TypeHelper - Checking FluorineFx location
+2016-12-07 12:24:01,452 [10] DEBUG FluorineFx.TypeHelper - Adding LAC location C:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\4f3dc2e4\41d2a55d\assembly\dl3\649e3f89\00cc76dd_5c44c901
+2016-12-07 12:24:01,452 [10] DEBUG FluorineFx.TypeHelper - Checking DynamicDirectory
+2016-12-07 12:24:01,452 [10] DEBUG FluorineFx.TypeHelper - Adding LAC location C:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\4f3dc2e4
+2016-12-07 12:24:01,452 [10] DEBUG FluorineFx.TypeHelper - Checking Request PhysicalApplicationPath
+2016-12-07 12:24:01,452 [10] DEBUG FluorineFx.TypeHelper - Adding LAC location D:\0.坤泰供热项目\Codes\WebServices\KunTaiWebServices\bin
+2016-12-07 12:24:01,452 [10] DEBUG FluorineFx.TypeHelper - Adding LAC location D:\0.坤泰供热项目\Codes\WebServices\KunTaiWebServices\Bin
+2016-12-07 12:24:02,806 [10] DEBUG FluorineFx.FluorineGateway - End AMF request
+2016-12-07 12:25:20,060 [3] DEBUG FluorineFx.Messaging.ClientManager - SubscriptionManager cache expired, clientId b2220fbd754148e0ad7f4da8fd3b2df0
+2016-12-07 12:25:20,061 [3] DEBUG FluorineFx.Messaging.Client - Timeout Client b2220fbd754148e0ad7f4da8fd3b2df0
+2016-12-07 12:25:20,066 [3] DEBUG FluorineFx.Messaging.ClientManager - SubscriptionManager removing subscriber b2220fbd754148e0ad7f4da8fd3b2df0
+2016-12-07 12:26:44,495 [3] DEBUG FluorineFx.FluorineGateway - Begin AMF request
+2016-12-07 12:26:44,495 [3] DEBUG FluorineFx.Messaging.MessageServer - Query endpoint endpointPath /Gateway.aspx contextPath /
+2016-12-07 12:26:44,504 [3] DEBUG FluorineFx.TypeHelper - TypeHelper probing assembly C:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\4f3dc2e4\41d2a55d\assembly\dl3\649e3f89\00cc76dd_5c44c901\FluorineFx.DLL
+2016-12-07 12:26:44,506 [3] DEBUG FluorineFx.TypeHelper - TypeHelper probing assembly C:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\4f3dc2e4\41d2a55d\App_Code.o2nahwit.dll
+2016-12-07 12:26:44,506 [3] DEBUG FluorineFx.TypeHelper - TypeHelper probing assembly C:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\4f3dc2e4\41d2a55d\App_Web_ug5qtwuw.dll
+2016-12-07 12:26:44,508 [3] DEBUG FluorineFx.TypeHelper - TypeHelper probing assembly C:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\4f3dc2e4\41d2a55d\assembly\dl3\0cfd59f9\00824ea8_7260d001\Aspose.Cells.DLL
+2016-12-07 12:26:44,510 [3] DEBUG FluorineFx.TypeHelper - TypeHelper probing assembly C:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\4f3dc2e4\41d2a55d\assembly\dl3\2040d130\2c7267b0_4150d201\KunTaiServiceLibrary.DLL
+2016-12-07 12:26:44,514 [3] DEBUG FluorineFx.Invocation.InvocationHandler - Invoking method KunTaiServiceLibrary.Employee.employeeLogin
+2016-12-07 12:26:44,683 [3] DEBUG FluorineFx.FluorineGateway - End AMF request
+2016-12-07 12:26:45,694 [16] DEBUG FluorineFx.FluorineGateway - Begin AMF request
+2016-12-07 12:26:45,694 [16] DEBUG FluorineFx.Messaging.MessageServer - Query endpoint endpointPath /Gateway.aspx contextPath /
+2016-12-07 12:26:45,695 [16] DEBUG FluorineFx.Invocation.InvocationHandler - Invoking method KunTaiServiceLibrary.Employee.getEmployeeAuthority
+2016-12-07 12:26:45,733 [16] DEBUG FluorineFx.FluorineGateway - End AMF request
+2016-12-07 12:26:51,855 [3] DEBUG FluorineFx.FluorineGateway - Begin AMF request
+2016-12-07 12:26:51,855 [3] DEBUG FluorineFx.Messaging.MessageServer - Query endpoint endpointPath /Gateway.aspx contextPath /
+2016-12-07 12:26:51,855 [3] DEBUG FluorineFx.TypeHelper - TypeHelper probing assembly C:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\4f3dc2e4\41d2a55d\assembly\dl3\649e3f89\00cc76dd_5c44c901\FluorineFx.DLL
+2016-12-07 12:26:51,856 [3] DEBUG FluorineFx.TypeHelper - TypeHelper probing assembly C:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\4f3dc2e4\41d2a55d\App_Code.o2nahwit.dll
+2016-12-07 12:26:51,856 [3] DEBUG FluorineFx.TypeHelper - TypeHelper probing assembly C:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\4f3dc2e4\41d2a55d\App_Web_ug5qtwuw.dll
+2016-12-07 12:26:51,860 [3] DEBUG FluorineFx.TypeHelper - TypeHelper probing assembly C:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\4f3dc2e4\41d2a55d\assembly\dl3\0cfd59f9\00824ea8_7260d001\Aspose.Cells.DLL
+2016-12-07 12:26:51,862 [3] DEBUG FluorineFx.TypeHelper - TypeHelper probing assembly C:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\4f3dc2e4\41d2a55d\assembly\dl3\2040d130\2c7267b0_4150d201\KunTaiServiceLibrary.DLL
+2016-12-07 12:26:51,862 [3] DEBUG FluorineFx.Invocation.InvocationHandler - Invoking method KunTaiServiceLibrary.KT_PushOrder.getDataItem
+2016-12-07 12:26:51,920 [3] DEBUG FluorineFx.FluorineGateway - End AMF request
+2016-12-07 12:27:14,680 [8] DEBUG FluorineFx.FluorineGateway - Begin AMF request
+2016-12-07 12:27:14,680 [8] DEBUG FluorineFx.Messaging.MessageServer - Query endpoint endpointPath /Gateway.aspx contextPath /
+2016-12-07 12:27:14,681 [8] DEBUG FluorineFx.TypeHelper - TypeHelper probing assembly C:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\4f3dc2e4\41d2a55d\assembly\dl3\649e3f89\00cc76dd_5c44c901\FluorineFx.DLL
+2016-12-07 12:27:14,683 [8] DEBUG FluorineFx.TypeHelper - TypeHelper probing assembly C:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\4f3dc2e4\41d2a55d\App_Code.o2nahwit.dll
+2016-12-07 12:27:14,683 [8] DEBUG FluorineFx.TypeHelper - TypeHelper probing assembly C:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\4f3dc2e4\41d2a55d\App_Web_ug5qtwuw.dll
+2016-12-07 12:27:14,685 [8] DEBUG FluorineFx.TypeHelper - TypeHelper probing assembly C:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\4f3dc2e4\41d2a55d\assembly\dl3\0cfd59f9\00824ea8_7260d001\Aspose.Cells.DLL
+2016-12-07 12:27:14,686 [8] DEBUG FluorineFx.TypeHelper - TypeHelper probing assembly C:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\4f3dc2e4\41d2a55d\assembly\dl3\2040d130\2c7267b0_4150d201\KunTaiServiceLibrary.DLL
+2016-12-07 12:27:14,687 [8] DEBUG FluorineFx.Invocation.InvocationHandler - Invoking method KunTaiServiceLibrary.KT_PushOrderWeather.getRunPercentage
+2016-12-07 12:27:15,029 [8] DEBUG FluorineFx.FluorineGateway - End AMF request
+2016-12-07 12:27:17,228 [8] DEBUG FluorineFx.FluorineGateway - Begin AMF request
+2016-12-07 12:27:17,228 [8] DEBUG FluorineFx.Messaging.MessageServer - Query endpoint endpointPath /Gateway.aspx contextPath /
+2016-12-07 12:27:17,228 [8] DEBUG FluorineFx.Invocation.InvocationHandler - Invoking method KunTaiServiceLibrary.KT_PushOrder.addDataItem
+2016-12-07 13:08:47,397 [8] ERROR FluorineFx.Messaging.Endpoints.Filter.ProcessFilter - 调用的目标发生了异常。
+System.Reflection.TargetInvocationException: 调用的目标发生了异常。 ---> System.ArgumentException: 列“Target”不属于表 Table。
+   在 System.Data.DataRow.GetDataColumn(String columnName)
+   在 System.Data.DataRow.get_Item(String columnName)
+   在 KunTaiServiceLibrary.KT_PushOrder.CreateStationSheet(Workbook workbook, Guid ID, Decimal dayRunTime, Double maxValue, Double minValue, Double aveTemp, Decimal[] sectionRatio, Boolean isToday) 位置 D:\0.坤泰供热项目\Codes\WebServices\KunTaiServiceLibrary\controllers\pushOrder\KT_PushOrder.cs:行号 1049
+   在 KunTaiServiceLibrary.KT_PushOrder.exportPushOrderFile(Guid ID, Double maxValue, Double minValue, Boolean isToday, String runDateTime, String directory) 位置 D:\0.坤泰供热项目\Codes\WebServices\KunTaiServiceLibrary\controllers\pushOrder\KT_PushOrder.cs:行号 812
+   在 KunTaiServiceLibrary.KT_PushOrder.addDataItem(String text) 位置 D:\0.坤泰供热项目\Codes\WebServices\KunTaiServiceLibrary\controllers\pushOrder\KT_PushOrder.cs:行号 83
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   在 System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   在 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 FluorineFx.Invocation.InvocationHandler.Invoke(Object obj, Object[] arguments)
+   在 FluorineFx.Messaging.Endpoints.Filter.ProcessFilter.Invoke(AMFContext context)
+2016-12-07 13:08:47,411 [17] DEBUG FluorineFx.FluorineGateway - Begin AMF request
+2016-12-07 13:08:47,449 [17] DEBUG FluorineFx.Messaging.MessageServer - Query endpoint endpointPath /Gateway.aspx contextPath /
+2016-12-07 13:08:47,450 [17] DEBUG FluorineFx.Invocation.InvocationHandler - Invoking method KunTaiServiceLibrary.KT_PushOrder.getDataItem
+2016-12-07 13:08:47,512 [8] DEBUG FluorineFx.FluorineGateway - End AMF request
+2016-12-07 13:08:47,513 [17] DEBUG FluorineFx.FluorineGateway - End AMF request
+2016-12-07 13:08:57,895 [16] DEBUG FluorineFx.FluorineGateway - Begin AMF request
+2016-12-07 13:08:57,895 [16] DEBUG FluorineFx.Messaging.MessageServer - Query endpoint endpointPath /Gateway.aspx contextPath /
+2016-12-07 13:08:57,895 [16] DEBUG FluorineFx.Invocation.InvocationHandler - Invoking method KunTaiServiceLibrary.KT_PushOrderWeather.getRunPercentage
+2016-12-07 13:08:58,287 [16] DEBUG FluorineFx.FluorineGateway - End AMF request
+2016-12-07 13:08:59,628 [8] DEBUG FluorineFx.FluorineGateway - Begin AMF request
+2016-12-07 13:08:59,628 [8] DEBUG FluorineFx.Messaging.MessageServer - Query endpoint endpointPath /Gateway.aspx contextPath /
+2016-12-07 13:08:59,628 [8] DEBUG FluorineFx.Invocation.InvocationHandler - Invoking method KunTaiServiceLibrary.KT_PushOrder.addDataItem
+2016-12-07 13:09:00,166 [8] DEBUG FluorineFx.FluorineGateway - End AMF request
+2016-12-07 13:09:03,096 [16] DEBUG FluorineFx.FluorineGateway - Begin AMF request
+2016-12-07 13:09:03,103 [16] DEBUG FluorineFx.Messaging.MessageServer - Query endpoint endpointPath /Gateway.aspx contextPath /
+2016-12-07 13:09:03,103 [16] DEBUG FluorineFx.Invocation.InvocationHandler - Invoking method KunTaiServiceLibrary.KT_PushOrder.getDataItem
+2016-12-07 13:09:03,140 [16] DEBUG FluorineFx.FluorineGateway - End AMF request
+2016-12-07 13:10:41,606 [8] DEBUG FluorineFx.FluorineGateway - Begin AMF request
+2016-12-07 13:10:41,606 [8] DEBUG FluorineFx.Messaging.MessageServer - Query endpoint endpointPath /Gateway.aspx contextPath /
+2016-12-07 13:10:41,607 [8] DEBUG FluorineFx.Invocation.InvocationHandler - Invoking method KunTaiServiceLibrary.KT_PushOrderWeather.getRunPercentage
+2016-12-07 13:10:42,145 [8] DEBUG FluorineFx.FluorineGateway - End AMF request
+2016-12-07 13:10:43,273 [8] DEBUG FluorineFx.FluorineGateway - Begin AMF request
+2016-12-07 13:10:43,273 [8] DEBUG FluorineFx.Messaging.MessageServer - Query endpoint endpointPath /Gateway.aspx contextPath /
+2016-12-07 13:10:43,273 [8] DEBUG FluorineFx.Invocation.InvocationHandler - Invoking method KunTaiServiceLibrary.KT_PushOrder.addDataItem
+2016-12-07 13:12:13,060 [8] DEBUG FluorineFx.FluorineGateway - End AMF request
+2016-12-07 13:13:07,456 [23] INFO  FluorineFx.FluorineGateway - Aquire ServiceBrowser renderer
+2016-12-07 13:13:07,474 [23] DEBUG FluorineFx.TypeHelper - Checking FluorineFx location
+2016-12-07 13:13:07,474 [23] DEBUG FluorineFx.TypeHelper - Adding LAC location C:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\4f3dc2e4\41d2a55d\assembly\dl3\649e3f89\00cc76dd_5c44c901
+2016-12-07 13:13:07,474 [23] DEBUG FluorineFx.TypeHelper - Checking DynamicDirectory
+2016-12-07 13:13:07,474 [23] DEBUG FluorineFx.TypeHelper - Adding LAC location C:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\4f3dc2e4
+2016-12-07 13:13:07,474 [23] DEBUG FluorineFx.TypeHelper - Checking Request PhysicalApplicationPath
+2016-12-07 13:13:07,474 [23] DEBUG FluorineFx.TypeHelper - Adding LAC location D:\0.坤泰供热项目\Codes\WebServices\KunTaiWebServices\bin
+2016-12-07 13:13:07,474 [23] DEBUG FluorineFx.TypeHelper - Adding LAC location D:\0.坤泰供热项目\Codes\WebServices\KunTaiWebServices\Bin
+2016-12-07 13:13:07,476 [23] INFO  FluorineFx.FluorineGateway - Aquired ServiceBrowser renderer
+2016-12-07 13:13:07,476 [23] INFO  FluorineFx.FluorineGateway - ************************************
+2016-12-07 13:13:07,476 [23] INFO  FluorineFx.FluorineGateway - Starting FluorineFx Gateway
+2016-12-07 13:13:07,476 [23] INFO  FluorineFx.FluorineGateway - FluorineFx version 1.0.0.15
+2016-12-07 13:13:07,476 [23] INFO  FluorineFx.FluorineGateway - ************************************
+2016-12-07 13:13:07,476 [23] INFO  FluorineFx.FluorineGateway - Creating Message Server
+2016-12-07 13:13:07,485 [23] DEBUG FluorineFx.Messaging.Config.ServiceConfigSettings - Loading services configuration file D:\0.坤泰供热项目\Codes\WebServices\KunTaiWebServices\WEB-INF\flex\services-config.xml
+2016-12-07 13:13:07,488 [23] DEBUG FluorineFx.Messaging.Config.ServiceConfigSettings - Loading configuration file D:\0.坤泰供热项目\Codes\WebServices\KunTaiWebServices\WEB-INF\flex\remoting-config.xml
+2016-12-07 13:13:07,504 [23] INFO  FluorineFx.Messaging.MessageServer - Starting Message Broker
+2016-12-07 13:13:07,519 [23] INFO  FluorineFx.FluorineGateway - Message Server started
+2016-12-07 13:13:08,061 [23] DEBUG FluorineFx.FluorineGateway - Begin AMF request
+2016-12-07 13:13:08,062 [23] DEBUG FluorineFx.Messaging.MessageServer - Query endpoint endpointPath /Gateway.aspx contextPath /
+2016-12-07 13:13:08,096 [23] DEBUG FluorineFx.TypeHelper - TypeHelper probing assembly C:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\4f3dc2e4\41d2a55d\assembly\dl3\649e3f89\00cc76dd_5c44c901\FluorineFx.DLL
+2016-12-07 13:13:08,098 [23] DEBUG FluorineFx.TypeHelper - TypeHelper probing assembly C:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\4f3dc2e4\41d2a55d\App_Code.eyctvld2.dll
+2016-12-07 13:13:08,098 [23] DEBUG FluorineFx.TypeHelper - TypeHelper probing assembly C:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\4f3dc2e4\41d2a55d\App_Web_3petmqhd.dll
+2016-12-07 13:13:08,099 [23] DEBUG FluorineFx.TypeHelper - TypeHelper probing assembly C:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\4f3dc2e4\41d2a55d\assembly\dl3\0cfd59f9\00824ea8_7260d001\Aspose.Cells.DLL
+2016-12-07 13:13:08,101 [23] DEBUG FluorineFx.TypeHelper - TypeHelper probing assembly C:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\4f3dc2e4\41d2a55d\assembly\dl3\2040d130\e61bad93_4850d201\KunTaiServiceLibrary.DLL
+2016-12-07 13:13:08,117 [23] DEBUG FluorineFx.Invocation.InvocationHandler - Invoking method KunTaiServiceLibrary.KT_PushOrder.getDataItem
+2016-12-07 13:13:08,147 [23] DEBUG FluorineFx.FluorineGateway - End AMF request
+2016-12-07 13:16:19,520 [8] DEBUG FluorineFx.FluorineGateway - Begin AMF request
+2016-12-07 13:16:19,520 [8] DEBUG FluorineFx.Messaging.MessageServer - Query endpoint endpointPath /Gateway.aspx contextPath /
+2016-12-07 13:16:19,521 [8] DEBUG FluorineFx.TypeHelper - TypeHelper probing assembly C:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\4f3dc2e4\41d2a55d\assembly\dl3\649e3f89\00cc76dd_5c44c901\FluorineFx.DLL
+2016-12-07 13:16:19,522 [8] DEBUG FluorineFx.TypeHelper - TypeHelper probing assembly C:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\4f3dc2e4\41d2a55d\App_Code.eyctvld2.dll
+2016-12-07 13:16:19,522 [8] DEBUG FluorineFx.TypeHelper - TypeHelper probing assembly C:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\4f3dc2e4\41d2a55d\App_Web_3petmqhd.dll
+2016-12-07 13:16:19,525 [8] DEBUG FluorineFx.TypeHelper - TypeHelper probing assembly C:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\4f3dc2e4\41d2a55d\assembly\dl3\0cfd59f9\00824ea8_7260d001\Aspose.Cells.DLL
+2016-12-07 13:16:19,526 [8] DEBUG FluorineFx.TypeHelper - TypeHelper probing assembly C:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\4f3dc2e4\41d2a55d\assembly\dl3\2040d130\e61bad93_4850d201\KunTaiServiceLibrary.DLL
+2016-12-07 13:16:19,526 [8] DEBUG FluorineFx.Invocation.InvocationHandler - Invoking method KunTaiServiceLibrary.KT_PushOrderWeather.getRunPercentage
+2016-12-07 13:16:19,902 [8] DEBUG FluorineFx.FluorineGateway - End AMF request
+2016-12-07 13:16:21,171 [8] DEBUG FluorineFx.FluorineGateway - Begin AMF request
+2016-12-07 13:16:21,171 [8] DEBUG FluorineFx.Messaging.MessageServer - Query endpoint endpointPath /Gateway.aspx contextPath /
+2016-12-07 13:16:21,172 [8] DEBUG FluorineFx.Invocation.InvocationHandler - Invoking method KunTaiServiceLibrary.KT_PushOrder.addDataItem
+2016-12-07 13:16:29,517 [8] DEBUG FluorineFx.FluorineGateway - End AMF request
+2016-12-07 13:16:33,193 [23] DEBUG FluorineFx.FluorineGateway - Begin AMF request
+2016-12-07 13:16:33,193 [23] DEBUG FluorineFx.Messaging.MessageServer - Query endpoint endpointPath /Gateway.aspx contextPath /
+2016-12-07 13:16:33,193 [23] DEBUG FluorineFx.Invocation.InvocationHandler - Invoking method KunTaiServiceLibrary.KT_PushOrder.getDataItem
+2016-12-07 13:16:33,246 [23] DEBUG FluorineFx.FluorineGateway - End AMF request
+2016-12-07 13:28:30,456 [24] INFO  FluorineFx.FluorineGateway - Aquire ServiceBrowser renderer
+2016-12-07 13:28:30,497 [24] DEBUG FluorineFx.TypeHelper - Checking FluorineFx location
+2016-12-07 13:28:30,497 [24] DEBUG FluorineFx.TypeHelper - Adding LAC location C:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\4f3dc2e4\41d2a55d\assembly\dl3\649e3f89\00cc76dd_5c44c901
+2016-12-07 13:28:30,498 [24] DEBUG FluorineFx.TypeHelper - Checking DynamicDirectory
+2016-12-07 13:28:30,498 [24] DEBUG FluorineFx.TypeHelper - Adding LAC location C:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\4f3dc2e4
+2016-12-07 13:28:30,498 [24] DEBUG FluorineFx.TypeHelper - Checking Request PhysicalApplicationPath
+2016-12-07 13:28:30,498 [24] DEBUG FluorineFx.TypeHelper - Adding LAC location D:\0.坤泰供热项目\Codes\WebServices\KunTaiWebServices\bin
+2016-12-07 13:28:30,498 [24] DEBUG FluorineFx.TypeHelper - Adding LAC location D:\0.坤泰供热项目\Codes\WebServices\KunTaiWebServices\Bin
+2016-12-07 13:28:30,501 [24] INFO  FluorineFx.FluorineGateway - Aquired ServiceBrowser renderer
+2016-12-07 13:28:30,501 [24] INFO  FluorineFx.FluorineGateway - ************************************
+2016-12-07 13:28:30,501 [24] INFO  FluorineFx.FluorineGateway - Starting FluorineFx Gateway
+2016-12-07 13:28:30,501 [24] INFO  FluorineFx.FluorineGateway - FluorineFx version 1.0.0.15
+2016-12-07 13:28:30,501 [24] INFO  FluorineFx.FluorineGateway - ************************************
+2016-12-07 13:28:30,501 [24] INFO  FluorineFx.FluorineGateway - Creating Message Server
+2016-12-07 13:28:30,507 [24] DEBUG FluorineFx.Messaging.Config.ServiceConfigSettings - Loading services configuration file D:\0.坤泰供热项目\Codes\WebServices\KunTaiWebServices\WEB-INF\flex\services-config.xml
+2016-12-07 13:28:30,510 [24] DEBUG FluorineFx.Messaging.Config.ServiceConfigSettings - Loading configuration file D:\0.坤泰供热项目\Codes\WebServices\KunTaiWebServices\WEB-INF\flex\remoting-config.xml
+2016-12-07 13:28:30,527 [24] INFO  FluorineFx.Messaging.MessageServer - Starting Message Broker
+2016-12-07 13:28:30,552 [24] INFO  FluorineFx.FluorineGateway - Message Server started
+2016-12-07 13:28:31,046 [24] DEBUG FluorineFx.FluorineGateway - Begin AMF request
+2016-12-07 13:28:31,047 [24] DEBUG FluorineFx.Messaging.MessageServer - Query endpoint endpointPath /Gateway.aspx contextPath /
+2016-12-07 13:28:31,073 [24] DEBUG FluorineFx.TypeHelper - TypeHelper probing assembly C:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\4f3dc2e4\41d2a55d\assembly\dl3\649e3f89\00cc76dd_5c44c901\FluorineFx.DLL
+2016-12-07 13:28:31,075 [24] DEBUG FluorineFx.TypeHelper - TypeHelper probing assembly C:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\4f3dc2e4\41d2a55d\App_Code.qphrjo_d.dll
+2016-12-07 13:28:31,075 [24] DEBUG FluorineFx.TypeHelper - TypeHelper probing assembly C:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\4f3dc2e4\41d2a55d\App_Web_hrnou5uu.dll
+2016-12-07 13:28:31,076 [24] DEBUG FluorineFx.TypeHelper - TypeHelper probing assembly C:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\4f3dc2e4\41d2a55d\assembly\dl3\0cfd59f9\00824ea8_7260d001\Aspose.Cells.DLL
+2016-12-07 13:28:31,077 [24] DEBUG FluorineFx.TypeHelper - TypeHelper probing assembly C:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\4f3dc2e4\41d2a55d\assembly\dl3\2040d130\1fe68c9a_4a50d201\KunTaiServiceLibrary.DLL
+2016-12-07 13:28:31,087 [24] DEBUG FluorineFx.Invocation.InvocationHandler - Invoking method KunTaiServiceLibrary.KT_PushOrderWeather.getRunPercentage
+2016-12-07 13:28:31,477 [24] DEBUG FluorineFx.FluorineGateway - End AMF request
+2016-12-07 13:28:43,728 [7] DEBUG FluorineFx.FluorineGateway - Begin AMF request
+2016-12-07 13:28:43,728 [7] DEBUG FluorineFx.Messaging.MessageServer - Query endpoint endpointPath /Gateway.aspx contextPath /
+2016-12-07 13:28:43,730 [7] DEBUG FluorineFx.TypeHelper - TypeHelper probing assembly C:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\4f3dc2e4\41d2a55d\assembly\dl3\649e3f89\00cc76dd_5c44c901\FluorineFx.DLL
+2016-12-07 13:28:43,733 [7] DEBUG FluorineFx.TypeHelper - TypeHelper probing assembly C:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\4f3dc2e4\41d2a55d\App_Code.qphrjo_d.dll
+2016-12-07 13:28:43,734 [7] DEBUG FluorineFx.TypeHelper - TypeHelper probing assembly C:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\4f3dc2e4\41d2a55d\App_Web_hrnou5uu.dll
+2016-12-07 13:28:43,741 [7] DEBUG FluorineFx.TypeHelper - TypeHelper probing assembly C:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\4f3dc2e4\41d2a55d\assembly\dl3\0cfd59f9\00824ea8_7260d001\Aspose.Cells.DLL
+2016-12-07 13:28:43,742 [7] DEBUG FluorineFx.TypeHelper - TypeHelper probing assembly C:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\4f3dc2e4\41d2a55d\assembly\dl3\2040d130\1fe68c9a_4a50d201\KunTaiServiceLibrary.DLL
+2016-12-07 13:28:43,743 [7] DEBUG FluorineFx.Invocation.InvocationHandler - Invoking method KunTaiServiceLibrary.KT_PushOrder.addDataItem
+2016-12-07 13:28:52,521 [7] ERROR FluorineFx.Messaging.Endpoints.Filter.ProcessFilter - 调用的目标发生了异常。
+System.Reflection.TargetInvocationException: 调用的目标发生了异常。 ---> System.IO.IOException: 文件“C:\uploadFiles\8日12月16年，坤泰热源指令量区间分配表.xls”正由另一进程使用，因此该进程无法访问此文件。
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   在 Aspose.Cells.Workbook.Save(String fileName, FileFormatType fileFormatType)
+   在 Aspose.Cells.Workbook.Save(String fileName)
+   在 KunTaiServiceLibrary.KT_PushOrder.exportPushOrderFile(Guid ID, Double maxValue, Double minValue, Boolean isToday, String runDateTime, String directory) 位置 D:\0.坤泰供热项目\Codes\WebServices\KunTaiServiceLibrary\controllers\pushOrder\KT_PushOrder.cs:行号 810
+   在 KunTaiServiceLibrary.KT_PushOrder.addDataItem(String text) 位置 D:\0.坤泰供热项目\Codes\WebServices\KunTaiServiceLibrary\controllers\pushOrder\KT_PushOrder.cs:行号 83
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   在 System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   在 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 FluorineFx.Invocation.InvocationHandler.Invoke(Object obj, Object[] arguments)
+   在 FluorineFx.Messaging.Endpoints.Filter.ProcessFilter.Invoke(AMFContext context)
+2016-12-07 13:28:52,555 [7] DEBUG FluorineFx.FluorineGateway - End AMF request
+2016-12-07 13:29:05,832 [24] DEBUG FluorineFx.FluorineGateway - Begin AMF request
+2016-12-07 13:29:05,832 [24] DEBUG FluorineFx.Messaging.MessageServer - Query endpoint endpointPath /Gateway.aspx contextPath /
+2016-12-07 13:29:05,833 [24] DEBUG FluorineFx.Invocation.InvocationHandler - Invoking method KunTaiServiceLibrary.KT_PushOrder.getDataItem
+2016-12-07 13:29:05,881 [24] DEBUG FluorineFx.FluorineGateway - End AMF request
+2016-12-07 13:29:13,378 [7] DEBUG FluorineFx.FluorineGateway - Begin AMF request
+2016-12-07 13:29:13,379 [7] DEBUG FluorineFx.Messaging.MessageServer - Query endpoint endpointPath /Gateway.aspx contextPath /
+2016-12-07 13:29:13,379 [7] DEBUG FluorineFx.Invocation.InvocationHandler - Invoking method KunTaiServiceLibrary.KT_PushOrderWeather.getRunPercentage
+2016-12-07 13:29:13,561 [7] DEBUG FluorineFx.FluorineGateway - End AMF request
+2016-12-07 13:29:14,667 [6] DEBUG FluorineFx.FluorineGateway - Begin AMF request
+2016-12-07 13:29:14,667 [6] DEBUG FluorineFx.Messaging.MessageServer - Query endpoint endpointPath /Gateway.aspx contextPath /
+2016-12-07 13:29:14,668 [6] DEBUG FluorineFx.Invocation.InvocationHandler - Invoking method KunTaiServiceLibrary.KT_PushOrder.addDataItem
+2016-12-07 13:29:15,406 [6] DEBUG FluorineFx.FluorineGateway - End AMF request
+2016-12-07 13:29:18,160 [24] DEBUG FluorineFx.FluorineGateway - Begin AMF request
+2016-12-07 13:29:18,160 [24] DEBUG FluorineFx.Messaging.MessageServer - Query endpoint endpointPath /Gateway.aspx contextPath /
+2016-12-07 13:29:18,160 [24] DEBUG FluorineFx.Invocation.InvocationHandler - Invoking method KunTaiServiceLibrary.KT_PushOrder.getDataItem
+2016-12-07 13:29:18,197 [24] DEBUG FluorineFx.FluorineGateway - End AMF request
+2016-12-07 13:31:31,732 [27] DEBUG FluorineFx.FluorineGateway - Begin AMF request
+2016-12-07 13:31:31,732 [27] DEBUG FluorineFx.Messaging.MessageServer - Query endpoint endpointPath /Gateway.aspx contextPath /
+2016-12-07 13:31:31,733 [27] DEBUG FluorineFx.TypeHelper - TypeHelper probing assembly C:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\4f3dc2e4\41d2a55d\assembly\dl3\649e3f89\00cc76dd_5c44c901\FluorineFx.DLL
+2016-12-07 13:31:31,734 [27] DEBUG FluorineFx.TypeHelper - TypeHelper probing assembly C:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\4f3dc2e4\41d2a55d\App_Code.qphrjo_d.dll
+2016-12-07 13:31:31,735 [27] DEBUG FluorineFx.TypeHelper - TypeHelper probing assembly C:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\4f3dc2e4\41d2a55d\App_Web_hrnou5uu.dll
+2016-12-07 13:31:31,738 [27] DEBUG FluorineFx.TypeHelper - TypeHelper probing assembly C:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\4f3dc2e4\41d2a55d\assembly\dl3\0cfd59f9\00824ea8_7260d001\Aspose.Cells.DLL
+2016-12-07 13:31:31,740 [27] DEBUG FluorineFx.TypeHelper - TypeHelper probing assembly C:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\4f3dc2e4\41d2a55d\assembly\dl3\2040d130\1fe68c9a_4a50d201\KunTaiServiceLibrary.DLL
+2016-12-07 13:31:31,742 [27] DEBUG FluorineFx.Invocation.InvocationHandler - Invoking method KunTaiServiceLibrary.KT_Boiler.GetDateSelect
+2016-12-07 13:31:31,754 [27] DEBUG FluorineFx.FluorineGateway - End AMF request
+2016-12-07 13:31:46,972 [7] DEBUG FluorineFx.FluorineGateway - Begin AMF request
+2016-12-07 13:31:46,973 [7] DEBUG FluorineFx.Messaging.MessageServer - Query endpoint endpointPath /Gateway.aspx contextPath /
+2016-12-07 13:31:46,973 [7] DEBUG FluorineFx.Invocation.InvocationHandler - Invoking method KunTaiServiceLibrary.KT_Boiler.getDataItem
+2016-12-07 13:31:47,213 [7] DEBUG FluorineFx.FluorineGateway - End AMF request
+2016-12-07 13:32:00,265 [7] DEBUG FluorineFx.FluorineGateway - Begin AMF request
+2016-12-07 13:32:00,265 [7] DEBUG FluorineFx.Messaging.MessageServer - Query endpoint endpointPath /Gateway.aspx contextPath /
+2016-12-07 13:32:00,265 [7] DEBUG FluorineFx.TypeHelper - TypeHelper probing assembly C:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\4f3dc2e4\41d2a55d\assembly\dl3\649e3f89\00cc76dd_5c44c901\FluorineFx.DLL
+2016-12-07 13:32:00,266 [7] DEBUG FluorineFx.TypeHelper - TypeHelper probing assembly C:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\4f3dc2e4\41d2a55d\App_Code.qphrjo_d.dll
+2016-12-07 13:32:00,266 [7] DEBUG FluorineFx.TypeHelper - TypeHelper probing assembly C:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\4f3dc2e4\41d2a55d\App_Web_hrnou5uu.dll
+2016-12-07 13:32:00,268 [7] DEBUG FluorineFx.TypeHelper - TypeHelper probing assembly C:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\4f3dc2e4\41d2a55d\assembly\dl3\0cfd59f9\00824ea8_7260d001\Aspose.Cells.DLL
+2016-12-07 13:32:00,269 [7] DEBUG FluorineFx.TypeHelper - TypeHelper probing assembly C:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\4f3dc2e4\41d2a55d\assembly\dl3\2040d130\1fe68c9a_4a50d201\KunTaiServiceLibrary.DLL
+2016-12-07 13:32:00,269 [7] DEBUG FluorineFx.Invocation.InvocationHandler - Invoking method KunTaiServiceLibrary.ZY_PushOrder.getDataItem
+2016-12-07 13:32:00,278 [7] DEBUG FluorineFx.FluorineGateway - End AMF request
+2016-12-07 13:32:02,531 [27] DEBUG FluorineFx.FluorineGateway - Begin AMF request
+2016-12-07 13:32:02,531 [27] DEBUG FluorineFx.Messaging.MessageServer - Query endpoint endpointPath /Gateway.aspx contextPath /
+2016-12-07 13:32:02,532 [27] DEBUG FluorineFx.Invocation.InvocationHandler - Invoking method KunTaiServiceLibrary.KT_PushOrder.getDataItem
+2016-12-07 13:32:02,533 [27] DEBUG FluorineFx.FluorineGateway - End AMF request
+2016-12-07 13:32:13,926 [7] DEBUG FluorineFx.FluorineGateway - Begin AMF request
+2016-12-07 13:32:13,926 [7] DEBUG FluorineFx.Messaging.MessageServer - Query endpoint endpointPath /Gateway.aspx contextPath /
+2016-12-07 13:32:13,926 [7] DEBUG FluorineFx.Invocation.InvocationHandler - Invoking method KunTaiServiceLibrary.KT_PushOrder.deleteDataItem
+2016-12-07 13:32:14,002 [7] DEBUG FluorineFx.FluorineGateway - End AMF request
+2016-12-07 13:32:22,712 [24] DEBUG FluorineFx.FluorineGateway - Begin AMF request
+2016-12-07 13:32:22,712 [24] DEBUG FluorineFx.Messaging.MessageServer - Query endpoint endpointPath /Gateway.aspx contextPath /
+2016-12-07 13:32:22,713 [24] DEBUG FluorineFx.Invocation.InvocationHandler - Invoking method KunTaiServiceLibrary.KT_PushOrder.deleteDataItem
+2016-12-07 13:32:22,742 [24] DEBUG FluorineFx.FluorineGateway - End AMF request
+2016-12-07 13:32:22,777 [3] DEBUG FluorineFx.FluorineGateway - Begin AMF request
+2016-12-07 13:32:22,777 [3] DEBUG FluorineFx.Messaging.MessageServer - Query endpoint endpointPath /Gateway.aspx contextPath /
+2016-12-07 13:32:22,779 [3] DEBUG FluorineFx.Invocation.InvocationHandler - Invoking method KunTaiServiceLibrary.KT_PushOrder.getDataItem
+2016-12-07 13:32:22,781 [3] DEBUG FluorineFx.FluorineGateway - End AMF request
+2016-12-07 16:40:17,861 [3] INFO  FluorineFx.FluorineGateway - Aquire ServiceBrowser renderer
+2016-12-07 16:40:17,874 [3] DEBUG FluorineFx.TypeHelper - Checking FluorineFx location
+2016-12-07 16:40:17,874 [3] DEBUG FluorineFx.TypeHelper - Adding LAC location C:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\4f3dc2e4\41d2a55d\assembly\dl3\649e3f89\00cc76dd_5c44c901
+2016-12-07 16:40:17,874 [3] DEBUG FluorineFx.TypeHelper - Checking DynamicDirectory
+2016-12-07 16:40:17,874 [3] DEBUG FluorineFx.TypeHelper - Adding LAC location C:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\4f3dc2e4
+2016-12-07 16:40:17,874 [3] DEBUG FluorineFx.TypeHelper - Checking Request PhysicalApplicationPath
+2016-12-07 16:40:17,874 [3] DEBUG FluorineFx.TypeHelper - Adding LAC location D:\0.坤泰供热项目\Codes\WebServices\KunTaiWebServices\bin
+2016-12-07 16:40:17,874 [3] DEBUG FluorineFx.TypeHelper - Adding LAC location D:\0.坤泰供热项目\Codes\WebServices\KunTaiWebServices\Bin
+2016-12-07 16:40:17,881 [3] INFO  FluorineFx.FluorineGateway - Aquired ServiceBrowser renderer
+2016-12-07 16:40:17,881 [3] INFO  FluorineFx.FluorineGateway - ************************************
+2016-12-07 16:40:17,881 [3] INFO  FluorineFx.FluorineGateway - Starting FluorineFx Gateway
+2016-12-07 16:40:17,881 [3] INFO  FluorineFx.FluorineGateway - FluorineFx version 1.0.0.15
+2016-12-07 16:40:17,881 [3] INFO  FluorineFx.FluorineGateway - ************************************
+2016-12-07 16:40:17,881 [3] INFO  FluorineFx.FluorineGateway - Creating Message Server
+2016-12-07 16:40:17,888 [3] DEBUG FluorineFx.Messaging.Config.ServiceConfigSettings - Loading services configuration file D:\0.坤泰供热项目\Codes\WebServices\KunTaiWebServices\WEB-INF\flex\services-config.xml
+2016-12-07 16:40:17,890 [3] DEBUG FluorineFx.Messaging.Config.ServiceConfigSettings - Loading configuration file D:\0.坤泰供热项目\Codes\WebServices\KunTaiWebServices\WEB-INF\flex\remoting-config.xml
+2016-12-07 16:40:17,900 [3] INFO  FluorineFx.Messaging.MessageServer - Starting Message Broker
+2016-12-07 16:40:17,914 [3] INFO  FluorineFx.FluorineGateway - Message Server started
+2016-12-07 16:40:19,233 [7] DEBUG FluorineFx.FluorineGateway - Begin AMF request
+2016-12-07 16:40:19,233 [7] DEBUG FluorineFx.Messaging.MessageServer - Query endpoint endpointPath /Gateway.aspx contextPath /
+2016-12-07 16:40:19,242 [7] DEBUG FluorineFx.IO.AMFReader - Class definition flex.messaging.messages.CommandMessage loaded
+2016-12-07 16:40:19,254 [7] DEBUG FluorineFx.IO.AMFReader - Class definition (untyped) loaded
+2016-12-07 16:40:19,254 [7] DEBUG FluorineFx.IO.AMFReader - Class definition (untyped) loaded
+2016-12-07 16:40:19,269 [7] DEBUG FluorineFx.Messaging.ClientManager - Creating new Client 4ad08294b886449090e62c4bd67d677d
+2016-12-07 16:40:19,273 [7] DEBUG FluorineFx.Messaging.MessageBroker - Routing CommandMessage ping
+2016-12-07 16:40:19,290 [7] DEBUG FluorineFx.FluorineGateway - End AMF request
+2016-12-07 16:40:19,299 [7] DEBUG FluorineFx.FluorineGateway - Begin AMF request
+2016-12-07 16:40:19,299 [7] DEBUG FluorineFx.Messaging.MessageServer - Query endpoint endpointPath /Gateway.aspx contextPath /
+2016-12-07 16:40:19,299 [7] DEBUG FluorineFx.IO.AMFReader - Class definition flex.messaging.messages.RemotingMessage loaded
+2016-12-07 16:40:19,301 [7] DEBUG FluorineFx.IO.AMFReader - Class definition (untyped) loaded
+2016-12-07 16:40:19,301 [7] DEBUG FluorineFx.Messaging.MessageBroker - Routing message RemotingMessage
+2016-12-07 16:40:19,308 [7] DEBUG FluorineFx.TypeHelper - TypeHelper probing assembly C:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\4f3dc2e4\41d2a55d\assembly\dl3\649e3f89\00cc76dd_5c44c901\FluorineFx.DLL
+2016-12-07 16:40:19,309 [7] DEBUG FluorineFx.TypeHelper - TypeHelper probing assembly C:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\4f3dc2e4\41d2a55d\App_Code.xcn4bhs7.dll
+2016-12-07 16:40:19,310 [7] DEBUG FluorineFx.TypeHelper - TypeHelper probing assembly C:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\4f3dc2e4\41d2a55d\App_Web_bd0wabzz.dll
+2016-12-07 16:40:19,311 [7] DEBUG FluorineFx.TypeHelper - TypeHelper probing assembly C:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\4f3dc2e4\41d2a55d\assembly\dl3\0cfd59f9\00824ea8_7260d001\Aspose.Cells.DLL
+2016-12-07 16:40:19,312 [7] DEBUG FluorineFx.TypeHelper - TypeHelper probing assembly C:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\4f3dc2e4\41d2a55d\assembly\dl3\2040d130\62f2a47a_6550d201\KunTaiServiceLibrary.DLL
+2016-12-07 16:40:19,313 [7] DEBUG FluorineFx.TypeHelper - TypeHelper probing assembly C:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\4f3dc2e4\41d2a55d\assembly\dl3\24b59d47\1211397a_6550d201\Maticsoft.DBUtility.DLL
+2016-12-07 16:40:19,314 [7] DEBUG FluorineFx.TypeHelper - TypeHelper probing assembly C:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\4f3dc2e4\41d2a55d\assembly\dl3\4246dbdc\00ab3132_0b0ed101\Warrior.DataAccessUtils.Desktop.DLL
+2016-12-07 16:40:19,315 [7] DEBUG FluorineFx.TypeHelper - TypeHelper probing assembly C:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\4f3dc2e4\41d2a55d\assembly\dl3\63d53856\00824ea8_7260d001\Aspose.Words.DLL
+2016-12-07 16:40:19,316 [7] DEBUG FluorineFx.TypeHelper - TypeHelper probing assembly C:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\4f3dc2e4\41d2a55d\assembly\dl3\649e3f89\00cc76dd_5c44c901\FluorineFx.DLL
+2016-12-07 16:40:19,317 [7] DEBUG FluorineFx.TypeHelper - TypeHelper probing assembly C:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\4f3dc2e4\41d2a55d\assembly\dl3\88638a14\00beb281_ec53c601\log4net.DLL
+2016-12-07 16:40:19,318 [7] DEBUG FluorineFx.TypeHelper - TypeHelper probing assembly C:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\4f3dc2e4\41d2a55d\assembly\dl3\904fbb1e\0036185a_b8e4c701\MySql.Data.DLL
+2016-12-07 16:40:19,320 [7] DEBUG FluorineFx.TypeHelper - TypeHelper probing assembly C:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\4f3dc2e4\41d2a55d\assembly\dl3\a047a6f2\00482437_670ed101\Newtonsoft.Json.DLL
+2016-12-07 16:40:19,321 [7] DEBUG FluorineFx.TypeHelper - TypeHelper probing assembly C:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\4f3dc2e4\41d2a55d\assembly\dl3\a96076a4\00f9a7de_5c44c901\FluorineFx.ServiceBrowser.DLL
+2016-12-07 16:40:19,325 [7] DEBUG FluorineFx.Invocation.InvocationHandler - Invoking method FluorineFx.ServiceBrowser.FluorineServiceBrowser.pingBrowser
+2016-12-07 16:40:19,326 [7] DEBUG FluorineFx.FluorineGateway - End AMF request
+2016-12-07 16:40:19,346 [7] DEBUG FluorineFx.FluorineGateway - Begin AMF request
+2016-12-07 16:40:19,347 [7] DEBUG FluorineFx.Messaging.MessageServer - Query endpoint endpointPath /Gateway.aspx contextPath /
+2016-12-07 16:40:19,347 [7] DEBUG FluorineFx.IO.AMFReader - Class definition flex.messaging.messages.RemotingMessage loaded
+2016-12-07 16:40:19,347 [7] DEBUG FluorineFx.IO.AMFReader - Class definition (untyped) loaded
+2016-12-07 16:40:19,347 [7] DEBUG FluorineFx.Messaging.MessageBroker - Routing message RemotingMessage
+2016-12-07 16:40:19,347 [7] DEBUG FluorineFx.Invocation.InvocationHandler - Invoking method FluorineFx.ServiceBrowser.FluorineServiceBrowser.getCapabilities
+2016-12-07 16:40:19,352 [7] DEBUG FluorineFx.FluorineGateway - End AMF request
+2016-12-07 16:40:19,397 [3] DEBUG FluorineFx.FluorineGateway - Begin AMF request
+2016-12-07 16:40:19,397 [3] DEBUG FluorineFx.Messaging.MessageServer - Query endpoint endpointPath /Gateway.aspx contextPath /
+2016-12-07 16:40:19,397 [3] DEBUG FluorineFx.IO.AMFReader - Class definition flex.messaging.messages.RemotingMessage loaded
+2016-12-07 16:40:19,397 [3] DEBUG FluorineFx.IO.AMFReader - Class definition (untyped) loaded
+2016-12-07 16:40:19,397 [3] DEBUG FluorineFx.Messaging.MessageBroker - Routing message RemotingMessage
+2016-12-07 16:40:19,397 [3] DEBUG FluorineFx.Invocation.InvocationHandler - Invoking method FluorineFx.ServiceBrowser.FluorineServiceBrowser.getServices
+2016-12-07 16:40:19,401 [3] DEBUG FluorineFx.TypeHelper - Checking FluorineFx location
+2016-12-07 16:40:19,401 [3] DEBUG FluorineFx.TypeHelper - Adding LAC location C:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\4f3dc2e4\41d2a55d\assembly\dl3\649e3f89\00cc76dd_5c44c901
+2016-12-07 16:40:19,401 [3] DEBUG FluorineFx.TypeHelper - Checking DynamicDirectory
+2016-12-07 16:40:19,401 [3] DEBUG FluorineFx.TypeHelper - Adding LAC location C:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\4f3dc2e4
+2016-12-07 16:40:19,401 [3] DEBUG FluorineFx.TypeHelper - Checking Request PhysicalApplicationPath
+2016-12-07 16:40:19,401 [3] DEBUG FluorineFx.TypeHelper - Adding LAC location D:\0.坤泰供热项目\Codes\WebServices\KunTaiWebServices\bin
+2016-12-07 16:40:19,401 [3] DEBUG FluorineFx.TypeHelper - Adding LAC location D:\0.坤泰供热项目\Codes\WebServices\KunTaiWebServices\Bin
+2016-12-07 16:40:20,402 [3] DEBUG FluorineFx.FluorineGateway - End AMF request
+2016-12-07 16:40:47,054 [7] DEBUG FluorineFx.FluorineGateway - Begin AMF request
+2016-12-07 16:40:47,054 [7] DEBUG FluorineFx.Messaging.MessageServer - Query endpoint endpointPath /Gateway.aspx contextPath /
+2016-12-07 16:40:47,061 [7] DEBUG FluorineFx.TypeHelper - TypeHelper probing assembly C:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\4f3dc2e4\41d2a55d\assembly\dl3\649e3f89\00cc76dd_5c44c901\FluorineFx.DLL
+2016-12-07 16:40:47,062 [7] DEBUG FluorineFx.TypeHelper - TypeHelper probing assembly C:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\4f3dc2e4\41d2a55d\App_Code.xcn4bhs7.dll
+2016-12-07 16:40:47,062 [7] DEBUG FluorineFx.TypeHelper - TypeHelper probing assembly C:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\4f3dc2e4\41d2a55d\App_Web_bd0wabzz.dll
+2016-12-07 16:40:47,063 [7] DEBUG FluorineFx.TypeHelper - TypeHelper probing assembly C:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\4f3dc2e4\41d2a55d\assembly\dl3\0cfd59f9\00824ea8_7260d001\Aspose.Cells.DLL
+2016-12-07 16:40:47,064 [7] DEBUG FluorineFx.TypeHelper - TypeHelper probing assembly C:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\4f3dc2e4\41d2a55d\assembly\dl3\2040d130\62f2a47a_6550d201\KunTaiServiceLibrary.DLL
+2016-12-07 16:40:47,066 [7] DEBUG FluorineFx.Invocation.InvocationHandler - Invoking method KunTaiServiceLibrary.KT_PushOrderWeather.getRunPercentage
+2016-12-07 16:40:47,490 [7] DEBUG FluorineFx.FluorineGateway - End AMF request
+2016-12-07 16:40:48,704 [3] DEBUG FluorineFx.FluorineGateway - Begin AMF request
+2016-12-07 16:40:48,704 [3] DEBUG FluorineFx.Messaging.MessageServer - Query endpoint endpointPath /Gateway.aspx contextPath /
+2016-12-07 16:40:48,705 [3] DEBUG FluorineFx.TypeHelper - TypeHelper probing assembly C:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\4f3dc2e4\41d2a55d\assembly\dl3\649e3f89\00cc76dd_5c44c901\FluorineFx.DLL
+2016-12-07 16:40:48,707 [3] DEBUG FluorineFx.TypeHelper - TypeHelper probing assembly C:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\4f3dc2e4\41d2a55d\App_Code.xcn4bhs7.dll
+2016-12-07 16:40:48,707 [3] DEBUG FluorineFx.TypeHelper - TypeHelper probing assembly C:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\4f3dc2e4\41d2a55d\App_Web_bd0wabzz.dll
+2016-12-07 16:40:48,710 [3] DEBUG FluorineFx.TypeHelper - TypeHelper probing assembly C:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\4f3dc2e4\41d2a55d\assembly\dl3\0cfd59f9\00824ea8_7260d001\Aspose.Cells.DLL
+2016-12-07 16:40:48,711 [3] DEBUG FluorineFx.TypeHelper - TypeHelper probing assembly C:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\4f3dc2e4\41d2a55d\assembly\dl3\2040d130\62f2a47a_6550d201\KunTaiServiceLibrary.DLL
+2016-12-07 16:40:48,711 [3] DEBUG FluorineFx.Invocation.InvocationHandler - Invoking method KunTaiServiceLibrary.KT_PushOrder.addDataItem
+2016-12-07 16:40:49,329 [3] DEBUG FluorineFx.FluorineGateway - End AMF request
+2016-12-07 16:40:52,221 [3] DEBUG FluorineFx.FluorineGateway - Begin AMF request
+2016-12-07 16:40:52,221 [3] DEBUG FluorineFx.Messaging.MessageServer - Query endpoint endpointPath /Gateway.aspx contextPath /
+2016-12-07 16:40:52,221 [3] DEBUG FluorineFx.Invocation.InvocationHandler - Invoking method KunTaiServiceLibrary.KT_PushOrder.getDataItem
+2016-12-07 16:40:52,278 [3] DEBUG FluorineFx.FluorineGateway - End AMF request
+2016-12-07 16:41:20,030 [9] DEBUG FluorineFx.Messaging.ClientManager - SubscriptionManager cache expired, clientId 4ad08294b886449090e62c4bd67d677d
+2016-12-07 16:41:20,030 [9] DEBUG FluorineFx.Messaging.Client - Timeout Client 4ad08294b886449090e62c4bd67d677d
+2016-12-07 16:41:20,033 [9] DEBUG FluorineFx.Messaging.ClientManager - SubscriptionManager removing subscriber 4ad08294b886449090e62c4bd67d677d

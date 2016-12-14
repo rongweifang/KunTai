@@ -15,9 +15,10 @@ namespace KunTaiServiceLibrary.controllers.pushOrder
         private int _Target ;//
         private int _BoilerCount = 3;//锅炉数量
         private decimal _Power ;//功率
+        private decimal _PathFlow;//补水泵流量
         private decimal _PatchPower;//补水泵功率
         private decimal _PatchEfficiency;//补水泵效率
-        private decimal _Scontent = 0.0006m;//煤中硫含量
+        private decimal _Scontent = 0.0052m;//煤中硫含量
         private decimal _Efficiency = 0.85m;//循环泵效率
         private decimal _Calorie = 5133m;//热量大卡
         private decimal _Ratio = 1;
@@ -181,6 +182,19 @@ namespace KunTaiServiceLibrary.controllers.pushOrder
                 _PatchEfficiency = value;
             }
         }
+
+        public decimal PathFlow
+        {
+            get
+            {
+                return _PathFlow;
+            }
+
+            set
+            {
+                _PathFlow = value;
+            }
+        }
         #endregion
         //最大热负荷
         private decimal GetLoad()
@@ -189,9 +203,9 @@ namespace KunTaiServiceLibrary.controllers.pushOrder
             return Target * _Area * 24;
         }
         //供热日热负荷
-        private decimal GetLoadDay()
+        public decimal GetLoadDay()
         {
-            return Math.Round(GetLoad() * (18 - (decimal)_AveTemp()) / (18 + 21),2);
+            return Math.Round(GetLoad() * (18 - (decimal)_AveTemp()) / (18 + 21), 2);
         }
         //平均温度
         private decimal _AveTemp()
@@ -199,78 +213,99 @@ namespace KunTaiServiceLibrary.controllers.pushOrder
             return (decimal)(Convert.ToDouble(_maxValue) + Convert.ToDouble(_minValue)) / 2;
         }
 
-        private decimal GetHeadGJ()
+        public decimal GetHeadGJ()
         {
-            return Math.Round(GetLoadDay() / _GJ,2);
+            return Math.Round(GetLoadDay() / _GJ, 2);
         }
         //总热量
         private decimal GetHeatDK()
         {
-            return Math.Round(GetHeadGJ() * _DK,2);
+            return Math.Round(GetHeadGJ() * _DK, 2);
         }
         //总煤量KG
-        private decimal _CoalTotal()
+        public decimal _CoalTotal()
         {
-            return Math.Round(GetHeatDK() / _Calorie,2);
+            return Math.Round(GetHeatDK() / _Calorie, 2);
         }
 
         //指令耗煤量T
         public decimal GetCoalTotal()
         {
-            return Math.Round(_CoalTotal() / 1000,2);
+            return Math.Round(_CoalTotal() / 1000, 2);
         }
         //指令运行时间
         public decimal GetRunDate()
         {
-            return Math.Round(_CoalTotal() / 133 / _Tonnage,2);
+            return Math.Round(_CoalTotal() / 133 / _Tonnage, 2);
+        }
+        //锅炉耗电
+        public decimal GetEleGL()
+        {
+            return Math.Round(GetRunDate() * _Power, 2);
         }
         //耗电量
         public decimal GetEle()
         {
-            return Math.Round(_BoilerCount * GetRunDate() * _Power * _Efficiency + 1.2m*7,2);
+            return Math.Round(_BoilerCount * GetRunDate() * _Power * _Efficiency);
+        }
+        //锅炉水量
+        public decimal GetWaterGL()
+        {
+            return Math.Round(GetCoalTotal() * 0.14m, 2);
         }
         //耗水量（一网水量）
         public decimal GetWaterTotal()
         {
-            return Math.Round(GetHeadGJ() /84,2);
+            return Math.Round(GetHeadGJ() / 84, 2);
         }
         //耗碱量
         public decimal GetAlkali()
         {
-            return Math.Round(GetCoalTotal() * _Scontent  / 0.19M,2);
+            //*0.0052*2.5/0.95*0.2
+            return Math.Round(GetCoalTotal() * _Scontent * 2.5m / 0.95m * 0.2m, 2);
         }
         //耗盐量
         public decimal GetSalt()
         {
-            return Math.Round(GetWaterTotal() * 0.41m,2);
+            return Math.Round(GetWaterTotal() * 0.41m, 2);
         }
 
         //循环泵指令时间
         public decimal GetPumpDate(decimal _WaterTotal)
         {
-            return _WaterTotal / _CYCLEFLOW / 0.002m;
+            return _WaterTotal / (_CYCLEFLOW * 0.002m);
         }
 
         //换热站
         //二网水
         public decimal GetAllWater2()
         {
+            //100q / 4.2;
             return 100 * GetHeadGJ() / 4.2m;
         }
         public decimal GetWater2()
         {
             //_Target * _Area * (18 - _AveTemp()) / (18 + 21) / 277777.78 * 100 / 4.2 * 0.003;
-            return Math.Round(GetAllWater2()*0.003m, 2);
+            return Math.Round(GetAllWater2() * 0.003m, 2);
         }
         //换热站指令时间
         public decimal GetStationRunDate()
         {
-            return Math.Round(GetAllWater2() / _CYCLEFLOW / _Efficiency,2);
+            return Math.Round(GetAllWater2() / _CYCLEFLOW, 2);
+        }
+
+        //锅炉耗电量
+        public decimal GetGuoLuEle()
+        {
+            //补水量GetWater2()
+            //补水时间=GetWater2()/补水泵流量
+
+            return Math.Round(GetWaterTotal() / (_CYCLEFLOW * 0.002m) * _Power * _Efficiency + GetWaterTotal() * _PatchPower * _PatchEfficiency / _PathFlow, 2);
         }
         //换热站耗电量
         public decimal GetStationEle()
         {
-            return Math.Round(GetStationRunDate() * (_Power * _Efficiency + _PatchPower * _PatchEfficiency), 2);
+            return Math.Round(GetStationRunDate() * _Power * _Efficiency + GetWater2() / _PathFlow * _PatchPower * _PatchEfficiency, 2);
         }
     }
 }
