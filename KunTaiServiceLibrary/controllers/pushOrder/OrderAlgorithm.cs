@@ -231,7 +231,7 @@ namespace KunTaiServiceLibrary.controllers.pushOrder
         //指令耗煤量T
         public decimal GetCoalTotal()
         {
-            return Math.Round(_CoalTotal() / 1000, 2);
+            return Math.Round(_CoalTotal() / 1000*1.05m, 2);
         }
         //指令运行时间
         public decimal GetRunDate()
